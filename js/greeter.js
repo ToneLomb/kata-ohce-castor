@@ -6,8 +6,8 @@ class SystemClock {
 }
 
 class Greeter {
-  constructor () {
-    this.clock = new SystemClock()
+  constructor (systemclock) {
+    this.clock = systemclock || new SystemClock()
   }
 
   greet () {
