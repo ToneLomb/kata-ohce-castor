@@ -12,8 +12,8 @@ class ConsoleInteractor {
 }
 
 class UI {
-  constructor () {
-    this.interactor = new ConsoleInteractor()
+  constructor (consoleInteractor) {
+    this.interactor = consoleInteractor || new ConsoleInteractor()
   }
 
   mainLoop () {
